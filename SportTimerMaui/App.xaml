@@ -1,0 +1,29 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:local="clr-namespace:SportTimerMaui"
+             x:Class="SportTimerMaui.App"
+             windows:Application.ImageDirectory="Assets">
+
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="PrimaryColor">#0066FF</Color>
+            <Color x:Key="SecondaryColor">White</Color>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="WorkSansRegular" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="Padding" Value="14,10" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
